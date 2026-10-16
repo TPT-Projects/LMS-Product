@@ -1,0 +1,94 @@
+# Local development stack.
+#   docker compose up -d                 -> PostgreSQL, MongoDB, Redis only (run api/web on your machine)
+#   docker compose --profile app up -d   -> also runs the API, Celery worker and web app in containers
+name: lms
+
+x-backend: &backend
+  build: ./backend
+  env_file: ./backend/.env
+  environment:
+    POSTGRES_HOST: postgres
+    POSTGRES_PORT: "5432"
+    MONGO_URI: mongodb://mongo:27017
+    REDIS_URL: redis://redis:6379/0
+  volumes:
+    - ./backend:/app
+  depends_on:
+    postgres: { condition: service_healthy }
+    mongo: { condition: service_healthy }
+    redis: { condition: service_healthy }
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      # Superuser is only used by the init script. The app connects as the
+      # non-superuser role below so that Row Level Security is enforced.
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_SUPERUSER_PASSWORD:-postgres}
+      APP_DB: ${POSTGRES_DB:-lms}
+      APP_DB_USER: ${POSTGRES_USER:-lms_app}
+      APP_DB_PASSWORD: ${POSTGRES_PASSWORD:-lms_app_password}
+    # 5433 on your machine, so it never clashes with a locally installed PostgreSQL.
+    ports: ["${POSTGRES_HOST_PORT:-5433}:5432"]
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/postgres:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  mongo:
+    image: mongo:7
+    ports: ["27017:27017"]
+    volumes:
+      - mongodata:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    <<: *backend
+    profiles: ["app"]
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    ports: ["8000:8000"]
+
+  worker:
+    <<: *backend
+    profiles: ["app"]
+    command: celery -A config worker -l info
+
+  beat:
+    <<: *backend
+    profiles: ["app"]
+    command: celery -A config beat -l info
+
+  web:
+    profiles: ["app"]
+    image: node:22-alpine
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    environment:
+      VITE_API_BASE_URL: http://localhost:8000/api/v1
+      VITE_WS_URL: ws://localhost:8000/ws
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports: ["5173:5173"]
+
+volumes:
+  pgdata:
+  mongodata:

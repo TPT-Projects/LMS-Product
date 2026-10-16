@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 10
+      mongo:
+        image: mongo:7
+        ports: ["27017:27017"]
+    env:
+      DJANGO_SETTINGS_MODULE: config.settings.test
+      DJANGO_SECRET_KEY: ci-only-not-secret
+      POSTGRES_DB: lms
+      POSTGRES_USER: lms_app
+      POSTGRES_PASSWORD: lms_app_password
+      POSTGRES_HOST: localhost
+      POSTGRES_PORT: "5432"
+      MONGO_URI: mongodb://localhost:27017
+      REDIS_URL: redis://localhost:6379/0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: backend/requirements-dev.txt
+      # The app role must NOT be a superuser, otherwise RLS is bypassed and the isolation tests are meaningless.
+      - name: Create app database role
+        run: |
+          PGPASSWORD=postgres psql -h localhost -U postgres -c "CREATE ROLE lms_app LOGIN PASSWORD 'lms_app_password' CREATEDB NOSUPERUSER NOBYPASSRLS;"
+          PGPASSWORD=postgres psql -h localhost -U postgres -c "CREATE DATABASE lms OWNER lms_app ENCODING 'UTF8';"
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check .
+      - run: black --check .
+      - run: python manage.py makemigrations --check --dry-run
+      - run: pytest --create-db
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run format:check
+      - run: npm test
+      - run: npm run build

@@ -1,0 +1,28 @@
+{
+  "name": "LMS - Lead Management",
+  "short_name": "LMS",
+  "description": "Leads from Meta, WhatsApp, calls and follow-ups in one place.",
+  "id": "/",
+  "start_url": "/enquiries?view=all",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "categories": ["business", "productivity"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "All enquiries", "url": "/enquiries?view=all" },
+    { "name": "Calls due today", "url": "/enquiries?view=calls_today" }
+  ]
+}

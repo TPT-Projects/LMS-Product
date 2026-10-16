@@ -1,0 +1,46 @@
+{
+  "id": "1332954398230203",
+  "created_time": "2026-06-11T20:51:31+0000",
+  "field_data": [
+    {
+      "name": "investment_budget",
+      "values": [
+        "₹5_cr+"
+      ]
+    },
+    {
+      "name": "purpose_of_purchase",
+      "values": [
+        "investment"
+      ]
+    },
+    {
+      "name": "preferred_contact_time",
+      "values": [
+        "morning"
+      ]
+    },
+    {
+      "name": "full_name",
+      "values": [
+        "Rohan Mehta"
+      ]
+    },
+    {
+      "name": "phone_number",
+      "values": [
+        "+919800011111"
+      ]
+    },
+    {
+      "name": "email",
+      "values": [
+        "rohan.mehta@example.com"
+      ]
+    }
+  ],
+  "form_id": "2869657293379182",
+  "ad_name": "Ad 1",
+  "adset_name": "Ahmedabad + G'nagar",
+  "campaign_name": "Leads_Dubai Properties_09/06/26"
+}

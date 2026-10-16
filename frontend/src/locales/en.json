@@ -1,0 +1,1424 @@
+{
+  "common": {
+    "actions": "Actions",
+    "actionsFor": "Actions for {{name}}",
+    "cancel": "Cancel",
+    "close": "Close",
+    "copy": "Copy",
+    "created": "Created",
+    "delete": "Delete",
+    "done": "Done",
+    "edit": "Edit",
+    "readOnly": "You can view these settings. Only an Owner or Admin can change them.",
+    "save": "Save",
+    "saveChanges": "Save changes",
+    "saved": "Changes saved.",
+    "choose": "Choose…",
+    "editName": "Edit {{name}}",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "fields": {
+    "choosePassword": "Choose a password",
+    "confirmPassword": "Confirm password",
+    "dedupeKey": "Match duplicate contacts by",
+    "defaultCountry": "Default country",
+    "email": "Email",
+    "fullName": "Full name",
+    "name": "Name",
+    "newPassword": "New password",
+    "password": "Password",
+    "role": "Role",
+    "teamName": "Team name",
+    "timezone": "Timezone",
+    "workEmail": "Work email",
+    "workspaceName": "Workspace name",
+    "phone": "Phone",
+    "owner": "Owner",
+    "status": "Status",
+    "source": "Source",
+    "campaign": "Campaign",
+    "adset": "Ad set",
+    "ad": "Ad",
+    "form": "Form ID"
+  },
+  "validation": {
+    "countryCode": "Use a 2-letter country code, for example IN.",
+    "email": "Enter a valid email address.",
+    "passwordLength": "Use at least 8 characters.",
+    "passwordMatch": "Passwords do not match.",
+    "required": "This field is required."
+  },
+  "errors": {
+    "forbidden": "Your role does not have access to this page. Ask an Owner or Admin if you need it.",
+    "forbiddenTitle": "No access",
+    "goHome": "Go to enquiries",
+    "network": "Cannot reach the server. Check your connection and try again.",
+    "notFound": "The page you are looking for does not exist.",
+    "notFoundTitle": "Page not found",
+    "server": "Something went wrong on our side. Please try again.",
+    "unknown": "Something went wrong. Please try again."
+  },
+  "roles": {
+    "owner": "Owner",
+    "admin": "Admin",
+    "manager": "Manager",
+    "agent": "Agent",
+    "viewer": "Viewer"
+  },
+  "auth": {
+    "backToLogin": "Back to log in",
+    "hidePassword": "Hide password",
+    "logout": "Log out",
+    "passwordHint": "At least 8 characters. Avoid common or all-number passwords.",
+    "showPassword": "Show password",
+    "login": {
+      "createWorkspace": "Create a workspace",
+      "forgot": "Forgot password?",
+      "noAccount": "New here?",
+      "submit": "Log in",
+      "subtitle": "Welcome back. Log in to your workspace.",
+      "title": "Log in"
+    },
+    "signup": {
+      "haveAccount": "Already have an account?",
+      "login": "Log in",
+      "submit": "Create workspace",
+      "subtitle": "Set up a workspace for your sales team.",
+      "title": "Create your workspace",
+      "workspacePlaceholder": "e.g. Acme Realty"
+    },
+    "forgot": {
+      "sent": "If an account exists for this email, we have sent a link to reset the password. Check your inbox.",
+      "submit": "Send reset link",
+      "subtitle": "Enter your email and we will send you a reset link.",
+      "title": "Reset your password"
+    },
+    "reset": {
+      "done": "Your password has been updated. You can now log in.",
+      "invalidLink": "This reset link is not valid. Ask for a new one.",
+      "submit": "Update password",
+      "subtitle": "Choose a new password for your account.",
+      "title": "Choose a new password"
+    },
+    "invite": {
+      "existingAccount": "You already have an account. Enter your password to join this workspace.",
+      "invalid": "This invite link is not valid.",
+      "loading": "Checking your invite…",
+      "someone": "Someone",
+      "submit": "Join workspace",
+      "subtitle": "{{inviter}} invited you to join as {{role}}.",
+      "title": "Join {{workspace}}",
+      "titleInvalid": "Invite not valid"
+    }
+  },
+  "nav": {
+    "collapse": "Collapse sidebar",
+    "contacts": "Contacts",
+    "dashboard": "Dashboard",
+    "expand": "Expand sidebar",
+    "imports": "Imports",
+    "main": "Main navigation",
+    "openMenu": "Open menu",
+    "reports": "Reports",
+    "settings": "Settings",
+    "skipToContent": "Skip to content",
+    "smartViews": "Smart Views",
+    "switchWorkspace": "Switch workspace",
+    "userMenu": "Account menu",
+    "workspace": "Workspace",
+    "workspaces": "Your workspaces",
+    "views": {
+      "all": "All Enquiries",
+      "callsToday": "Calls Due Today",
+      "mine": "My Enquiries",
+      "unassigned": "Unassigned"
+    },
+    "myViews": "My views",
+    "manageViews": "Manage views",
+    "apps": "Apps",
+    "people": "Users"
+  },
+  "search": {
+    "label": "Search",
+    "placeholder": "Search name, phone, email, campaign…",
+    "enquiries": "Enquiries",
+    "contacts": "Contacts",
+    "noResults": "Nothing found for “{{q}}”.",
+    "seeAll": "See all enquiries matching “{{q}}”",
+    "enquiryCount_one": "{{count}} enquiry",
+    "enquiryCount_other": "{{count}} enquiries"
+  },
+  "notifications": {
+    "emptyDescription": "Finished imports will show up here.",
+    "emptyTitle": "You're all caught up",
+    "title": "Notifications",
+    "description": "Finished imports and other updates for you.",
+    "markAll": "Mark all as read",
+    "markRead": "Mark as read",
+    "titleUnread_one": "Notifications, {{count}} unread",
+    "titleUnread_other": "Notifications, {{count}} unread",
+    "viewAll": "View all notifications"
+  },
+  "shortcuts": {
+    "help": "Show keyboard shortcuts",
+    "sidebar": "Collapse or expand the sidebar",
+    "title": "Keyboard shortcuts",
+    "search": "Search",
+    "quickAdd": "New enquiry",
+    "saveNote": "Save a note"
+  },
+  "theme": {
+    "dark": "Dark",
+    "label": "Theme",
+    "light": "Light",
+    "system": "System"
+  },
+  "table": {
+    "first": "First page",
+    "last": "Last page",
+    "next": "Next page",
+    "pageOf": "{{page}} / {{total}}",
+    "pagination": "Pagination",
+    "previous": "Previous page",
+    "rowsPerPage": "Rows",
+    "showing": "{{from}}–{{to}} of {{count}}"
+  },
+  "settings": {
+    "description": "Manage your workspace, people, teams, statuses and fields.",
+    "title": "Settings",
+    "tabs": {
+      "teams": "Teams",
+      "users": "Users & roles",
+      "workspace": "Workspace",
+      "statuses": "Statuses",
+      "customFields": "Custom fields",
+      "meta": "Meta"
+    }
+  },
+  "workspace": {
+    "countryHint": "Used to read phone numbers without a country code. India is IN.",
+    "description": "Basic details used across the workspace.",
+    "timezoneHint": "Dates are shown as DD/MM/YYYY in this timezone.",
+    "title": "Workspace",
+    "dedupe": {
+      "email": "Email",
+      "hint": "When a lead arrives with the same value, it is added to the existing contact as a repeat enquiry.",
+      "phone": "Phone"
+    }
+  },
+  "users": {
+    "allRoles": "All roles",
+    "changeRole": "Change role",
+    "description": "People who can log in to this workspace.",
+    "filterRole": "Filter by role",
+    "inviteButton": "Invite user",
+    "joined": "Joined",
+    "lastLogin": "Last login",
+    "searchPlaceholder": "Search by name or email",
+    "title": "Users",
+    "you": "(you)",
+    "empty": {
+      "description": "Try a different search or role filter.",
+      "title": "No users found"
+    },
+    "invite": {
+      "description": "They will get an email with a link to join this workspace.",
+      "link": "Invite link",
+      "roleHint": "You can change the role later.",
+      "sentDescription": "We emailed the invite. You can also copy the link and share it directly. It expires in 7 days.",
+      "sentTitle": "Invite sent",
+      "submit": "Send invite",
+      "title": "Invite a user"
+    },
+    "pending": {
+      "description": "Invites that have not been accepted yet.",
+      "expires": "Expires {{date}}",
+      "revoke": "Revoke invite for {{email}}",
+      "revokeShort": "Revoke invite",
+      "title": "Pending invites"
+    }
+  },
+  "teams": {
+    "confirmDelete": "Delete the team \"{{name}}\"? Its members stay in the workspace.",
+    "create": "New team",
+    "createTitle": "Create team",
+    "description": "Group users so managers can see their team's enquiries.",
+    "editTitle": "Edit team",
+    "memberCount_one": "{{count}} member",
+    "memberCount_other": "{{count}} members",
+    "members": "Members",
+    "noMembers": "No members yet",
+    "title": "Teams",
+    "empty": {
+      "description": "Create a team and add users to it.",
+      "title": "No teams yet"
+    }
+  },
+  "enquiries": {
+    "description": "Every lead, from Meta, imports or added by hand.",
+    "empty": {
+      "description": "New leads appear here. Connect Meta lead ads in Apps, add one by hand with “New enquiry”, or press Q.",
+      "title": "No enquiries yet",
+      "connectApps": "Connect apps"
+    },
+    "new": "New enquiry",
+    "noName": "No name",
+    "repeat": "Repeat enquiry",
+    "unassigned": "Unassigned",
+    "nextFollowUp": "Next follow-up",
+    "searchPlaceholder": "Search this list",
+    "sortBy": "Sort by",
+    "select": "Select {{name}}",
+    "selectAll": "Select all on this page",
+    "changeStatus": "Status: {{status}}. Change status",
+    "emptyFiltered": {
+      "title": "No matching enquiries",
+      "description": "Try removing a filter or searching for something else."
+    },
+    "sorts": {
+      "-created_at": "Newest first",
+      "created_at": "Oldest first",
+      "-updated_at": "Recently updated",
+      "name": "Name (A–Z)",
+      "status": "Status",
+      "owner": "Owner"
+    },
+    "bulk": {
+      "label": "Bulk actions",
+      "selected_one": "{{count}} selected",
+      "selected_other": "{{count}} selected",
+      "setStatus": "Set status",
+      "assign": "Assign",
+      "primaryOwner": "Primary owner",
+      "clear": "Clear selection",
+      "confirmDelete_one": "Delete {{count}} enquiry? It is removed from every list.",
+      "confirmDelete_other": "Delete {{count}} enquiries? They are removed from every list.",
+      "done_one": "Updated {{count}} enquiry.",
+      "done_other": "Updated {{count}} enquiries.",
+      "failed": "The action did not finish. Some enquiries may not have changed; please try again."
+    },
+    "form": {
+      "title": "New enquiry",
+      "description": "If this phone or email already belongs to a contact, the enquiry is linked to it as a repeat.",
+      "submit": "Create enquiry",
+      "phoneHint": "With country code, or a 10-digit Indian number.",
+      "phoneOrEmail": "Enter a phone number or an email.",
+      "defaultStatus": "Default (New)",
+      "ownerSelf": "Enquiries you create are assigned to you.",
+      "you": "You",
+      "note": "First note (optional)"
+    },
+    "export": "Export",
+    "newLeads_one": "{{count}} new lead · Show",
+    "newLeads_other": "{{count}} new leads · Show"
+  },
+  "contacts": {
+    "description": "One record per person. Created automatically from enquiries, never edited by hand.",
+    "empty": {
+      "description": "Contacts are created automatically when enquiries arrive.",
+      "title": "No contacts yet"
+    },
+    "search": "Search name, phone or email",
+    "enquiries": "Enquiries",
+    "firstSeen": "First seen",
+    "firstSeenOn": "First seen {{date}}",
+    "back": "Back to contacts",
+    "notFound": "Contact not found",
+    "readOnly": "Contacts are read-only. They are created and updated automatically when enquiries arrive.",
+    "noVisibleEnquiries": "No enquiries you can see"
+  },
+  "dashboard": {
+    "description": "Today's numbers at a glance.",
+    "empty": {
+      "description": "The dashboard widgets arrive in Phase 5.",
+      "title": "Nothing to show yet"
+    }
+  },
+  "reports": {
+    "description": "Ready-made reports by source, campaign, owner and status.",
+    "empty": {
+      "description": "Reports arrive in Phase 5.",
+      "title": "No reports yet"
+    }
+  },
+  "imports": {
+    "description": "Bring in leads from CSV or Excel. Up to 100 rows import at once; bigger files run in the background and you get a notification.",
+    "empty": {
+      "description": "Import leads from a CSV or Excel file. Duplicates are linked to existing contacts.",
+      "title": "No imports yet"
+    },
+    "new": "New import",
+    "back": "Back to imports",
+    "file": "File",
+    "rows": "Rows",
+    "result": "Result",
+    "resultShort": "{{created}} new · {{linked}} linked · {{failed}} failed",
+    "by": "Imported by",
+    "notFound": "Import not found",
+    "wizardDescription": "Upload a file, match its columns to fields, check the preview, then import.",
+    "steps": "Import steps",
+    "stepNames": {
+      "upload": "Upload",
+      "map": "Match columns",
+      "preview": "Preview"
+    },
+    "dropTitle": "Drop a CSV or Excel file here",
+    "dropHint": "Up to 20 MB and 50,000 rows. Dates must be DD/MM/YYYY. The first row must be the column names.",
+    "chooseFile": "Choose file",
+    "template": "Download a template",
+    "rowCount_one": "{{count}} row",
+    "rowCount_other": "{{count}} rows",
+    "column": "Column in your file",
+    "example": "Example",
+    "importAs": "Import as",
+    "importAsFor": "Import “{{column}}” as",
+    "ignore": "Don’t import",
+    "mapHint": "Phone or email is needed to match people. Existing contacts are reused and the new enquiry is marked as a repeat.",
+    "otherFile": "Use another file",
+    "toPreview": "Preview",
+    "previewTitle": "First rows",
+    "previewHint": "Nothing has been saved yet. Rows with problems are skipped and listed in the failed-rows report.",
+    "problems": "Problems",
+    "backToMapping": "Back to columns",
+    "liveHint_one": "This file has {{count}} row. It will be imported right away.",
+    "liveHint_other": "This file has {{count}} rows. They will be imported right away.",
+    "backgroundHint_one": "This file has {{count}} row. It will be imported in the background and you will get a notification when it is done.",
+    "backgroundHint_other": "This file has {{count}} rows. They will be imported in the background; you can keep working and you will get a notification when it is done.",
+    "run_one": "Import {{count}} row",
+    "run_other": "Import {{count}} rows",
+    "detailMeta": "{{rows}} rows · {{by}} · {{date}}",
+    "queued": "Waiting to start…",
+    "running": "Importing…",
+    "keepWorking": "You can leave this page. You will get a notification when the import is done.",
+    "failedHint": "The import stopped. Please try again.",
+    "failedRows": "Failed rows",
+    "failedRowsHint": "Download them, fix the problems in the file and import it again.",
+    "downloadFailed": "Download failed rows",
+    "rowNumber": "Row {{n}}",
+    "moreFailed_one": "And {{count}} more row in the download.",
+    "moreFailed_other": "And {{count}} more rows in the download.",
+    "summary": {
+      "valid": "Ready to import",
+      "invalid": "With problems",
+      "existing": "Match existing contacts",
+      "duplicates": "Repeated in the file"
+    },
+    "counts": {
+      "created": "New contacts",
+      "linked": "Added to existing contacts",
+      "failed": "Failed"
+    },
+    "statuses": {
+      "uploaded": "Uploaded",
+      "mapped": "Ready",
+      "queued": "Queued",
+      "running": "Importing",
+      "completed": "Completed",
+      "completed_with_errors": "Completed with errors",
+      "failed": "Failed"
+    },
+    "targets": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "status": "Status",
+      "owner": "Owner (email or name)",
+      "campaign": "Campaign",
+      "adset": "Ad set",
+      "ad": "Ad",
+      "form": "Form ID",
+      "created_at": "Date (DD/MM/YYYY)"
+    }
+  },
+  "sources": {
+    "manual": "Manual",
+    "meta": "Meta",
+    "import": "Import",
+    "sheets": "Google Sheets"
+  },
+  "enquiry": {
+    "back": "Back",
+    "notFound": "Enquiry not found",
+    "details": "Details",
+    "contact": "Contact",
+    "contactEnquiries_one": "{{count}} enquiry from this person",
+    "contactEnquiries_other": "{{count}} enquiries from this person",
+    "formResponse": "Original form response",
+    "secondaryOwners": "Secondary owners",
+    "phoneLocked": "The phone number cannot be changed after the enquiry is created.",
+    "delete": "Delete enquiry",
+    "confirmDelete": "Delete this enquiry? It is removed from every list. The contact is kept while it has other enquiries.",
+    "noCustomFields": "No custom fields yet.",
+    "addCustomFields": "Add custom fields",
+    "tabs": {
+      "timeline": "Timeline",
+      "notes": "Notes",
+      "calls": "Calls",
+      "followups": "Follow-ups",
+      "attachments": "Attachments"
+    }
+  },
+  "quick": {
+    "label": "Quick actions",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "note": "Add note"
+  },
+  "notes": {
+    "add": "Add note",
+    "placeholder": "Write a note…",
+    "shortcut": "Ctrl + Enter to save",
+    "empty": "No notes yet"
+  },
+  "calls": {
+    "outcome": "Outcome",
+    "duration": "Duration",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "min": "min",
+    "sec": "sec",
+    "notes": "Call notes",
+    "notesPlaceholder": "What was discussed? (optional)",
+    "log": "Log call",
+    "empty": "No calls logged yet",
+    "outcomes": {
+      "connected": "Connected",
+      "no_answer": "No answer",
+      "busy": "Busy",
+      "callback_requested": "Call back later",
+      "not_interested": "Not interested",
+      "wrong_number": "Wrong number"
+    }
+  },
+  "followups": {
+    "title": "What to do",
+    "titlePlaceholder": "e.g. Call back about the site visit",
+    "date": "Date",
+    "time": "Time",
+    "assignee": "Assigned to",
+    "schedule": "Schedule",
+    "empty": "No follow-ups yet",
+    "overdue": "Overdue",
+    "markDone": "Mark “{{title}}” as done",
+    "badDate": "Enter the date as DD/MM/YYYY and a valid time.",
+    "autoCall": {
+      "label": "Auto-call with Exotel",
+      "on": "This call will be placed automatically with Exotel at the scheduled time (Exotel rings the assignee first, then the lead).",
+      "off": "Exotel will not call automatically. Turn on to auto-call for this enquiry.",
+      "short": "Auto-call",
+      "toggle": "Auto-call {{title}} with Exotel",
+      "status": {
+        "started": "Auto-called",
+        "completed": "Auto-call done",
+        "no_answer": "Auto-call: no answer",
+        "busy": "Auto-call: busy",
+        "failed": "Auto-call failed",
+        "skipped": "Auto-call skipped",
+        "cancelled": "Auto-call off"
+      },
+      "notConnected": "Call not connected",
+      "hours": "Calling hours: {{hours}}.",
+      "outsideHours": "Auto-calls run only in the calling hours ({{hours}}). Pick a time inside them, or turn off auto-call for this call."
+    },
+    "reschedule": "Reschedule",
+    "rescheduleTitle": "Reschedule the call"
+  },
+  "attachments": {
+    "drop": "Drop files here, or",
+    "choose": "Choose files",
+    "limits": "PDF, images, Word, Excel, CSV or text. Up to 10 MB each.",
+    "empty": "No attachments yet",
+    "download": "Download {{name}}",
+    "tooBig": "{{name}} is larger than 10 MB."
+  },
+  "timeline": {
+    "empty": "Nothing has happened yet",
+    "system": "System",
+    "showMore": "Show more",
+    "created": "{{actor}} created this enquiry ({{source}})",
+    "repeat_one": "Repeat enquiry: this person has {{count}} earlier enquiry",
+    "repeat_other": "Repeat enquiry: this person has {{count}} earlier enquiries",
+    "contactUpdated": "Contact details filled in: {{fields}}",
+    "status": "{{actor}} changed the status from {{from}} to {{to}}",
+    "fields_one": "{{actor}} updated {{count}} field",
+    "fields_other": "{{actor}} updated {{count}} fields",
+    "owner": "{{actor}} changed the owner from {{from}} to {{to}}",
+    "secondary": "{{actor}} changed the secondary owners",
+    "added": "Added: {{names}}",
+    "removed": "Removed: {{names}}",
+    "note": "{{actor}} added a note",
+    "call": "{{actor}} logged a call: {{outcome}}, {{duration}}",
+    "followupScheduled": "{{actor}} scheduled “{{title}}” for {{due}}",
+    "followupDone": "{{actor}} completed “{{title}}”",
+    "attachment": "{{actor}} attached {{file}}",
+    "deleted": "{{actor}} deleted this enquiry",
+    "other": "{{actor}}: {{type}}",
+    "contactFields": {
+      "name": "name",
+      "phone_e164": "phone",
+      "email_lower": "email"
+    },
+    "fieldNames": {
+      "name": "Name",
+      "email": "Email",
+      "campaign_name": "Campaign",
+      "adset_name": "Ad set",
+      "ad_name": "Ad"
+    },
+    "voiceNote": "{{actor}} added a voice note ({{duration}})",
+    "restored": "Restored by Meta “Sync leads”",
+    "autoCall": {
+      "started": "Auto-call started: Exotel rang {{agent}} and then the lead",
+      "completed": "Auto-call completed",
+      "no_answer": "Auto-call: no answer",
+      "busy": "Auto-call: busy",
+      "failed": "Auto-call failed",
+      "skipped": "Auto-call skipped",
+      "cancelled": "Auto-call cancelled",
+      "other": "Auto-call: {{status}}"
+    }
+  },
+  "statuses": {
+    "title": "Statuses",
+    "description": "The stages an enquiry moves through. The order here is used everywhere.",
+    "add": "Add status",
+    "addTitle": "Add status",
+    "editTitle": "Edit status",
+    "color": "Colour",
+    "default": "Default",
+    "won": "Won",
+    "closed": "Closed",
+    "moveUp": "Move {{name}} up",
+    "moveDown": "Move {{name}} down",
+    "defaultLabel": "Default for new enquiries",
+    "defaultHint": "Exactly one status is the default.",
+    "closedLabel": "Closed",
+    "closedHint": "No more work is expected (for example Closed or Lost).",
+    "wonLabel": "Counts as won",
+    "wonHint": "Used by the conversion report. A won status is always closed.",
+    "colors": {
+      "gray": "Gray",
+      "blue": "Blue",
+      "amber": "Amber",
+      "violet": "Violet",
+      "green": "Green",
+      "red": "Red"
+    }
+  },
+  "customFields": {
+    "title": "Custom fields",
+    "description": "Extra fields on enquiries, such as budget or city. They can be filtered and searched.",
+    "add": "Add field",
+    "addTitle": "Add custom field",
+    "editTitle": "Edit custom field",
+    "label": "Label",
+    "type": "Type",
+    "typeLocked": "The type cannot be changed after the field is created.",
+    "options": "Options",
+    "optionsHint": "One option per line.",
+    "required": "Required",
+    "requiredBadge": "Required",
+    "active": "Active (shown on enquiries)",
+    "inactive": "Inactive",
+    "types": {
+      "text": "Text",
+      "number": "Number",
+      "currency": "Currency",
+      "date": "Date",
+      "dropdown": "Dropdown",
+      "multi_select": "Multi-select",
+      "checkbox": "Checkbox"
+    },
+    "empty": {
+      "title": "No custom fields yet",
+      "description": "Add fields like Investment budget, Purpose or City."
+    }
+  },
+  "filters": {
+    "button": "Filters",
+    "title": "Filters",
+    "description": "Combine rules with all (AND) or any (OR). Groups let you mix both.",
+    "match": "Match",
+    "all": "all",
+    "any": "any",
+    "ofTheseRules": "of these rules",
+    "addRule": "Add rule",
+    "addGroup": "Add group",
+    "removeRule": "Remove rule",
+    "removeGroup": "Remove group",
+    "field": "Field",
+    "operator": "Condition",
+    "value": "Value",
+    "from": "From",
+    "to": "To",
+    "days": "days",
+    "me": "Me",
+    "apply": "Apply filters",
+    "clear": "Clear",
+    "clearAll": "Clear all",
+    "standardFields": "Standard fields",
+    "customFields": "Custom fields",
+    "fields": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "status": "Status",
+      "owner": "Owner",
+      "source": "Source",
+      "campaign": "Campaign",
+      "adset": "Ad set",
+      "ad": "Ad",
+      "form": "Form ID",
+      "isRepeat": "Repeat enquiry",
+      "createdAt": "Created",
+      "updatedAt": "Updated"
+    },
+    "ops": {
+      "contains": "contains",
+      "not_contains": "does not contain",
+      "eq": "is",
+      "neq": "is not",
+      "starts_with": "starts with",
+      "is_empty": "is empty",
+      "is_not_empty": "is not empty",
+      "in": "is any of",
+      "not_in": "is none of",
+      "is_true": "is yes",
+      "is_false": "is no",
+      "today": "is today",
+      "last_days": "in the last",
+      "on": "is on",
+      "before": "is before",
+      "after": "is after",
+      "between": "is between",
+      "gt": "is more than",
+      "gte": "is at least",
+      "lt": "is less than",
+      "lte": "is at most",
+      "contains_any": "has any of"
+    }
+  },
+  "views": {
+    "title": "Views",
+    "description": "Saved filters. Pin the ones you use most to the sidebar.",
+    "saveAs": "Save view",
+    "saveTitle": "Save view",
+    "saveDescription": "Saves the current filters and search so you can open them in one click.",
+    "editTitle": "Rename or share view",
+    "namePlaceholder": "e.g. Hot Dubai leads",
+    "share": "Share with the workspace",
+    "shareHint": "Everyone can open it. Each person still sees only the enquiries they are allowed to see.",
+    "pin": "Pin to sidebar",
+    "unpin": "Unpin",
+    "pinned": "Pinned",
+    "shared": "Shared",
+    "renameShare": "Rename or share",
+    "confirmDelete": "Delete the view “{{name}}”? Enquiries are not affected.",
+    "by": "by {{name}}",
+    "ruleCount_one": "{{count}} filter rule",
+    "ruleCount_other": "{{count}} filter rules",
+    "empty": {
+      "title": "No saved views yet",
+      "description": "Filter the enquiry list, then choose “Save view”.",
+      "action": "Go to enquiries"
+    }
+  },
+  "columns": {
+    "button": "Columns",
+    "title": "Columns",
+    "description": "Choose which columns to show and drag them into the order you want. Locked columns are always shown.",
+    "alwaysShown": "Always shown",
+    "movable": "Your columns",
+    "reset": "Reset to default",
+    "moveUp": "Move {{name}} up",
+    "moveDown": "Move {{name}} down",
+    "action": "Action",
+    "actions": "Actions",
+    "updated": "Updated"
+  },
+  "actions": {
+    "scheduleCall": "Schedule call",
+    "logCall": "Log a call",
+    "addNote": "Add note",
+    "markDone": "Mark follow-up done",
+    "open": "Open",
+    "overdue": "Overdue · {{title}}",
+    "today": "Today {{time}}",
+    "upcoming": "Call {{date}}",
+    "scheduleTitle": "Schedule a call with {{name}}",
+    "logCallTitle": "Log a call with {{name}}",
+    "noteTitle": "Note on {{name}}",
+    "defaultCallTitle": "Call back",
+    "notConnected": "Not connected · reschedule",
+    "called": "Called · {{when}}",
+    "lastNotConnected": "Not connected · {{when}}"
+  },
+  "voice": {
+    "record": "Voice note",
+    "stop": "Stop",
+    "discard": "Discard recording",
+    "recording": "Recording {{time}}",
+    "note": "Voice note",
+    "play": "Play voice note",
+    "errors": {
+      "unsupported": "This browser cannot record audio. Try Chrome, Edge, Firefox or Safari.",
+      "denied": "Microphone access was blocked. Allow the microphone for this site in your browser settings, then try again.",
+      "failed": "Recording stopped unexpectedly. Please try again."
+    }
+  },
+  "meta": {
+    "back": "Back to Meta settings",
+    "connection": {
+      "title": "Meta (Facebook & Instagram lead ads)",
+      "description": "Leads from your Instant Forms arrive here in real time. One workspace connects one Page.",
+      "connect": "Connect Meta",
+      "disconnect": "Disconnect",
+      "confirmDisconnect": "Log out and disconnect {{page}}? New leads stop arriving. Enquiries already created stay.",
+      "notConnected": "Not connected. Click Connect Meta, log in with Facebook and choose the Page that runs your lead ads.",
+      "notConfigured": "The Meta app is not set up on the server yet.",
+      "notConfiguredHint": "Add META_APP_ID, META_APP_SECRET and META_WEBHOOK_VERIFY_TOKEN to backend/.env, and add these addresses in your Meta app settings:",
+      "redirect": "OAuth redirect URL",
+      "webhook": "Webhook URL",
+      "connectedOn": "Connected {{date}}",
+      "detectAds": "Save campaign, ad set and ad names on each lead",
+      "popupOpen": "Finish the Facebook login in the popup window. This page updates by itself when you are done."
+    },
+    "token": {
+      "ok": "Access OK",
+      "expiring": "Access expires soon",
+      "expired": "Access expired",
+      "none": "No access token"
+    },
+    "access": {
+      "ok": "Leads access is granted. New leads will be read from this Page.",
+      "missing": "This app cannot read the Page's leads yet.",
+      "step1": "Open Meta Business Suite and go to Settings > Integrations > Leads Access.",
+      "step2": "Select this Page and give access to this app (CRM).",
+      "step3": "Come back here and click Check again.",
+      "checkAgain": "Check again"
+    },
+    "pages": {
+      "title": "Choose the Page to connect",
+      "onlyOne": "Only one Page can be connected. To use another Page later, disconnect this one first.",
+      "taken": "Already connected to another workspace",
+      "none": "No Pages came back from Facebook. Click Log in again and allow your Pages in the popup.",
+      "connect": "Connect this Page"
+    },
+    "guide": {
+      "title": "How to connect",
+      "show": "Show",
+      "login": {
+        "title": "Log in with Facebook",
+        "body": "Click Connect Meta and log in with the Facebook account that manages your Page. Allow all requested permissions."
+      },
+      "page": {
+        "title": "Choose one Page",
+        "body": "Pick the Page that runs your lead ads. One workspace can connect one Page."
+      },
+      "access": {
+        "title": "Give Leads Access",
+        "body": "In Meta Business Suite > Settings > Integrations > Leads Access, select the Page and give access to this app. Then click Check again."
+      },
+      "forms": {
+        "title": "Connect your forms",
+        "body": "In Manage Forms, click Connect on each Instant Form whose leads should become enquiries."
+      },
+      "mapping": {
+        "title": "Map the questions",
+        "body": "Open Map fields for each form. Send Name, Phone and Email to the standard fields and other questions to custom fields."
+      },
+      "test": {
+        "title": "Send a test lead",
+        "body": "Use Meta's Lead Ads Testing Tool. The enquiry appears within seconds with campaign, ad set, ad and form."
+      }
+    },
+    "forms": {
+      "title": "Manage Forms",
+      "description": "All Instant Forms of the Page. Only connected forms create enquiries.",
+      "refresh": "Refresh",
+      "name": "Form",
+      "statusOnMeta": "Status on Meta",
+      "connection": "Connection",
+      "connected": "Connected",
+      "notConnected": "Not connected",
+      "leads": "Leads received",
+      "connect": "Connect",
+      "disconnect": "Disconnect",
+      "mapFields": "Map fields",
+      "metaStatus": {
+        "active": "Active",
+        "archived": "Archived",
+        "deleted": "Deleted",
+        "draft": "Draft"
+      },
+      "empty": {
+        "title": "No forms yet",
+        "description": "Click Refresh to load the Instant Forms of your Page."
+      },
+      "search": "Search forms"
+    },
+    "mapping": {
+      "title": "Map fields: {{form}}",
+      "description": "Choose where each question goes. Several questions (even from different forms) can feed the same custom field.",
+      "noQuestions": "No questions yet. They appear after Refresh or once the first lead arrives.",
+      "targetFor": "Where should “{{question}}” go?",
+      "unmapped": "Not mapped yet",
+      "ignore": "Don't import",
+      "addField": "Create a custom field",
+      "newOnly": "Changes apply to new leads. The original answers are always kept on each enquiry."
+    },
+    "sync": {
+      "history": "Sync history",
+      "failed": "Failed syncs",
+      "when": "When",
+      "source": "Source",
+      "lead": "Lead ID",
+      "message": "Details",
+      "error": "Error",
+      "attempts": "Attempts",
+      "lastAttempt": "Last attempt",
+      "retry": "Retry",
+      "emptyHistory": "No leads received yet",
+      "emptyFailed": "No failed syncs",
+      "status": {
+        "synced": "Synced",
+        "duplicate": "Already synced",
+        "form_not_connected": "Form not connected",
+        "campaign_not_selected": "Campaign not selected",
+        "failed": "Failed",
+        "restored": "Restored"
+      },
+      "sources": {
+        "webhook": "Webhook",
+        "backfill": "Backfill",
+        "retry": "Retry",
+        "test": "Test",
+        "manual": "Sync leads"
+      },
+      "retried": {
+        "synced": "The lead was synced.",
+        "duplicate": "This lead was already synced. Nothing was duplicated.",
+        "form_not_connected": "The lead's form is not connected, so no enquiry was created.",
+        "failed": "Still failing. Check the error and try again later.",
+        "ignored": "This lead belongs to a Page that is no longer connected.",
+        "campaign_not_selected": "The lead's campaign is not selected, so no enquiry was created.",
+        "restored": "The deleted enquiry was restored."
+      }
+    },
+    "banner": {
+      "expiring": "Your Meta connection expires soon. Reconnect to keep receiving leads.",
+      "expired": "Your Meta connection has expired. New leads are not arriving.",
+      "action": "Open Meta settings"
+    },
+    "oauthDone": {
+      "ok": "Facebook is connected",
+      "error": "Facebook login did not finish",
+      "returning": "Returning to the app…",
+      "closeHint": "You can close this window.",
+      "continue": "Continue setup"
+    },
+    "setup": {
+      "title": "Set up Meta lead ads",
+      "description": "Choose the Page, the forms that sync, then bring in your leads.",
+      "steps": "Setup steps",
+      "step": {
+        "page": "Page",
+        "forms": "Forms",
+        "sync": "Sync leads"
+      },
+      "open": "Setup",
+      "continue": "Continue setup",
+      "pendingPage": "Facebook is connected. Choose the Page to finish connecting.",
+      "pageHint": "These are the Pages you allowed in the Facebook popup. Pick the one that runs your lead ads (one Page per workspace).",
+      "formsTitle": "Forms of this Page",
+      "formsHint": "Auto Sync is on: every form syncs. Turn it off to switch forms on one by one.",
+      "noForms": "No forms were found for this Page. Click Refresh forms; if Meta refuses, its reason is shown below.",
+      "formsSelected_one": "{{count}} form syncing",
+      "formsSelected_other": "{{count}} forms syncing",
+      "next": "Next",
+      "back": "Back",
+      "finish": "Finish and open Enquiries",
+      "connectedPage": "Connected Page: {{page}}",
+      "connectForm": "Sync {{form}}",
+      "leadsCount_one": "{{count}} lead",
+      "leadsCount_other": "{{count}} leads",
+      "syncTitle": "Sync your leads",
+      "syncHint": "Bring in the leads your forms already collected. Choose how far back to look.",
+      "missingPage": "Page missing? Log in again and, in the Facebook popup, choose “Opt in to all current and future Pages” (or tick every Page).",
+      "loginAgain": "Log in again",
+      "refreshForms": "Refresh forms"
+    },
+    "logout": {
+      "button": "Log out",
+      "confirm": "Log out of this Facebook account? You can connect again at any time."
+    },
+    "syncNow": {
+      "button": "Sync leads",
+      "title": "Sync leads now",
+      "description": "Pull leads from the connected forms. Leads already in the LMS are skipped, so nothing is duplicated.",
+      "period": "Sync leads from",
+      "result": "Checked {{checked}} leads, added {{added}} new enquiries.",
+      "open": "Open enquiries",
+      "hint": "Leads sync on their own: after you connect, and about every minute while the LMS is open. Use this to bring back older leads or ones deleted here.",
+      "errors": "Meta refused to share leads for these forms. Check Leads Access, or log out and connect again:",
+      "days": {
+        "1": "Last 24 hours",
+        "7": "Last 7 days",
+        "30": "Last 30 days"
+      },
+      "restored_one": "Restored {{count}} lead that was deleted in the LMS.",
+      "restored_other": "Restored {{count}} leads that were deleted in the LMS."
+    },
+    "autoSync": {
+      "label": "Auto Sync all forms",
+      "onHint": "Every form of this Page syncs leads, including forms you create later. Turn off to choose forms one by one.",
+      "offHint": "Only the forms you switch on below sync leads.",
+      "lockedHint": "Turn off Auto Sync to choose forms one by one.",
+      "syncing": "Bringing in your leads from the last 30 days… They appear in Enquiries as they arrive."
+    }
+  },
+  "apps": {
+    "title": "Apps",
+    "description": "Connect the tools your team already uses. Leads, messages and calls then come together in the LMS.",
+    "search": "Search apps",
+    "categoriesLabel": "App categories",
+    "allCategories": "All categories",
+    "back": "All apps",
+    "docs": "Docs",
+    "tabs": {
+      "all": "All apps ({{count}})",
+      "connected": "Connected ({{count}})"
+    },
+    "categories": {
+      "lead_sources": "Lead sources",
+      "messaging": "Messaging",
+      "calling": "Calling"
+    },
+    "status": {
+      "connected": "Connected",
+      "error": "Needs attention",
+      "needs_setup": "Finish setup",
+      "not_connected": "Not connected",
+      "coming_soon": "Coming soon"
+    },
+    "actions": {
+      "connect": "Connect",
+      "manage": "Manage",
+      "finishSetup": "Finish setup",
+      "editDetails": "Edit details",
+      "test": "Test connection",
+      "disconnect": "Disconnect",
+      "confirmDisconnect": "Disconnect {{app}}? The saved details are deleted. You can connect again at any time.",
+      "reconnect": "Log in again",
+      "connectWith": {
+        "facebook": "Connect with Facebook",
+        "google": "Connect with Google"
+      }
+    },
+    "menu": {
+      "label": "Apps: connected apps and marketplace",
+      "button": "Apps",
+      "connected": "Connected apps",
+      "count_one": "{{count}} app",
+      "count_other": "{{count}} apps",
+      "empty": "No apps connected yet. Connect Meta lead ads, WhatsApp, Exotel or Google Sheets in a few clicks.",
+      "connectApp": "Connect an app",
+      "manage": "Manage"
+    },
+    "getStarted": {
+      "title": "Get set up in minutes",
+      "description": "Connect Meta lead ads, WhatsApp and Exotel so leads, messages and calls flow into the LMS.",
+      "progress": "{{done}} of {{total}} connected"
+    },
+    "emptyConnected": {
+      "title": "No apps connected yet",
+      "description": "Pick an app from All apps and click Connect."
+    },
+    "emptySearch": {
+      "title": "No apps found",
+      "description": "Try another name or category."
+    },
+    "notFound": {
+      "title": "App not found",
+      "description": "This app is not in the list. Go back to all apps."
+    },
+    "detail": {
+      "overview": "Overview",
+      "howToConnect": "How to connect",
+      "connection": "Connection",
+      "account": "Account",
+      "connectedBy": "Connected by",
+      "connectedAt": "Connected",
+      "lastChecked": "Last checked",
+      "notConnected": "{{app}} is not connected to this workspace yet.",
+      "youNeed": "You will need",
+      "attention": "The last check failed. Edit the details or test again.",
+      "needsSetup": "Facebook is connected. Finish setup to choose the Page and forms.",
+      "metaManage": "Pages, forms and lead sync are managed under Settings › Meta.",
+      "comingSoon": "We are building this app. It will be ready to connect here soon.",
+      "manage": "Manage"
+    },
+    "connect": {
+      "title": "Connect {{app}}",
+      "editTitle": "Edit {{app}} details",
+      "submit": "Connect",
+      "save": "Save and check",
+      "checkedFirst": "We check these details with {{app}} before saving, so you know right away that they work.",
+      "optional": "(optional)",
+      "secretSaved": "Saved. Leave blank to keep the current value.",
+      "encrypted": "Secrets are stored encrypted and never shown again.",
+      "whereToFind": "Where to find these"
+    },
+    "catalog": {
+      "meta": {
+        "name": "Meta Lead Ads",
+        "tagline": "Facebook and Instagram lead ads arrive as enquiries in real time.",
+        "description": "Log in with Facebook in a popup, pick your Page and every Instant Form lead becomes an enquiry with its campaign, ad set and ad. Leads you already have come in with one click.",
+        "connectHint": "",
+        "getStarted": "Leads from your Facebook and Instagram ads",
+        "features": [
+          "One-click Facebook login in a popup, no copy-pasting",
+          "All your Pages listed, including Business Manager Pages",
+          "Auto Sync every form, or choose forms one by one",
+          "Sync leads from the last 24 hours, 7 days or 30 days",
+          "Campaign, ad set, ad and form saved on each enquiry"
+        ],
+        "steps": [
+          "Click Connect. Facebook opens in a small popup.",
+          "Log in, choose “Opt in to all current and future Pages” and click Continue.",
+          "Back in the LMS, pick the Page that runs your lead ads.",
+          "Keep Auto Sync on for all forms, or turn it off and choose forms.",
+          "Click Sync leads to bring in leads you already have."
+        ]
+      },
+      "whatsapp": {
+        "name": "WhatsApp Business",
+        "tagline": "Connect a new number or your WhatsApp Business app number, guided by Facebook.",
+        "description": "Connect the same way as Make.com: a Facebook popup guides you to choose or create your WhatsApp Business Account, then add a new phone number (verified by SMS or call) or keep using your WhatsApp Business app number (coexistence). The LMS subscribes to the account and registers new numbers for you.",
+        "connectHint": "",
+        "getStarted": "Your WhatsApp Business number",
+        "features": [
+          "Guided Facebook popup, no API keys",
+          "Add a new number, or use your WhatsApp Business app number",
+          "New numbers registered automatically (two-step PIN saved)",
+          "Choose which number the team uses"
+        ],
+        "steps": [
+          "Choose Connect a number or Connect the app number.",
+          "In the Facebook popup, choose or create your business and WhatsApp Business Account.",
+          "Add your phone number and verify it (or confirm your WhatsApp Business app number).",
+          "Back in the LMS, the number is listed under WhatsApp numbers."
+        ]
+      },
+      "exotel": {
+        "name": "Exotel",
+        "tagline": "Cloud calling with automatic calls to new leads and at scheduled times.",
+        "description": "Connect your Exotel account with its API key and token. The LMS loads your ExoPhones (virtual numbers) and can call automatically: Exotel rings the agent first, then connects the lead, showing your chosen ExoPhone.",
+        "connectHint": "Paste the details from Exotel › Settings › API Settings.",
+        "getStarted": "Calling with your Exotel numbers",
+        "features": [
+          "All active ExoPhones listed, refreshed automatically once a day",
+          "Auto-call new leads from the forms you choose, after 1, 2 or 5 minutes",
+          "Auto-call at the time of a scheduled call (can be switched off per call)",
+          "Every auto-call is logged on the enquiry"
+        ],
+        "steps": [
+          "Log in to Exotel and open Settings › API Settings.",
+          "Copy the Account SID, API key and API token, and check your region (Mumbai or Singapore).",
+          "Click Connect and paste the details. The LMS checks them with Exotel and loads your numbers.",
+          "Choose the default caller number and turn on auto-calling where you want it.",
+          "Make sure every agent has their phone number under Users."
+        ]
+      },
+      "google_sheets": {
+        "name": "Google Sheets",
+        "tagline": "Send leads to a Google Sheet (kept up to date) or import a sheet's rows as leads.",
+        "description": "Log in with Google. Connect a Meta form (for example your real estate form) to a sheet: all its leads are written there and the sheet stays up to date as leads arrive and their status and details change. You can also import a sheet's rows as enquiries.",
+        "connectHint": "",
+        "getStarted": "Leads from a Google Sheet",
+        "features": [
+          "One-click Google login in a popup",
+          "Send a form's leads (or all enquiries) to a new spreadsheet or a new tab",
+          "Status, owner and other changes update the sheet about every minute",
+          "Import rows of a sheet as enquiries; new rows synced every 5 minutes"
+        ],
+        "steps": [
+          "Click Connect with Google and allow read-only access to your sheets.",
+          "Pick the spreadsheet and the tab with your leads (the first row holds the column names).",
+          "Check the name, phone and email columns, then click Connect sheet."
+        ]
+      },
+      "google_ads": {
+        "name": "Google Ads",
+        "tagline": "Leads from Google Ads lead forms.",
+        "description": "Bring leads from Google Ads lead form assets into the LMS as enquiries."
+      },
+      "linkedin": {
+        "name": "LinkedIn Ads",
+        "tagline": "Leads from LinkedIn Lead Gen Forms.",
+        "description": "Bring leads from LinkedIn Lead Gen Forms into the LMS as enquiries."
+      }
+    },
+    "fields": {
+      "exotel": {
+        "region": {
+          "label": "Region",
+          "hint": "Where your Exotel account is hosted.",
+          "placeholder": "",
+          "options": {
+            "in": "Mumbai (api.in.exotel.com)",
+            "sg": "Singapore (api.exotel.com)"
+          }
+        },
+        "account_sid": {
+          "label": "Account SID",
+          "hint": "Settings › API Settings.",
+          "placeholder": "yourcompany1"
+        },
+        "api_key": {
+          "label": "API key",
+          "hint": "Settings › API Settings.",
+          "placeholder": ""
+        },
+        "api_token": {
+          "label": "API token",
+          "hint": "Settings › API Settings.",
+          "placeholder": ""
+        }
+      }
+    }
+  },
+  "people": {
+    "title": "Users",
+    "description": "Everyone in this workspace with their contact details. Add your phone number: auto-calls ring it first.",
+    "username": "Username",
+    "name": "Name",
+    "phone": "Contact number",
+    "phoneHint": "Exotel rings this number first when an auto-call is placed for you.",
+    "email": "Email ID",
+    "alternatePhone": "Alternate phone number",
+    "role": "Role",
+    "search": "Search name or email",
+    "empty": "No users found",
+    "editTitle": "Edit {{name}}"
+  },
+  "exotel": {
+    "howItWorks": "How auto-calling works: when a call is due, Exotel rings the agent's phone (from Users) first, then connects the lead and shows your default ExoPhone. Calls run while the LMS is open (or always, on a server with Celery). A call more than 15 minutes late is skipped.",
+    "numbers": {
+      "title": "Your numbers",
+      "refreshed": "Refreshed {{when}}",
+      "notRefreshed": "Not loaded yet",
+      "add": "Add number",
+      "refresh": "Refresh",
+      "empty": "No active numbers yet. Click Refresh, or add a number.",
+      "activeSince": "Active since {{when}}",
+      "voice": "Voice",
+      "sms": "SMS",
+      "manual": "Added by hand",
+      "default": "Default caller",
+      "makeDefault": "Make default",
+      "remove": "Remove {{number}}",
+      "inactive": "No longer active in Exotel: {{numbers}}",
+      "autoRefresh": "Numbers refresh automatically once a day. Times show in your workspace time zone; hover for UTC.",
+      "phonePlaceholder": "ExoPhone, e.g. +91 80 4711 2345",
+      "phoneLabel": "ExoPhone number",
+      "namePlaceholder": "Name (optional)",
+      "nameLabel": "Name of the number",
+      "addButton": "Add",
+      "addHint": "For a number Exotel does not list yet. To buy more numbers, use your Exotel dashboard, then Refresh."
+    },
+    "auto": {
+      "title": "Auto-calling",
+      "description": "When should Exotel call leads automatically?",
+      "noCaller": "Choose a default caller number above: calls need it.",
+      "followups": "Call at the time of a scheduled call",
+      "followupsHint": "When someone schedules a call, it is auto-called at that time (ringing the assignee first). The person scheduling can switch it off for that enquiry.",
+      "fallback": "Calls for unassigned leads go to",
+      "fallbackNone": "No one (skip the call)",
+      "noPhoneShort": "no phone",
+      "fallbackHint": "Leads with an owner call the owner; leads without one call this person.",
+      "missingPhones": "These users have no phone number, so their auto-calls are skipped: {{names}}.",
+      "addPhones": "Add phone numbers"
+    },
+    "forms": {
+      "title": "New lead calling",
+      "descriptionPage": "Turn on the forms of {{page}} whose new leads should be called automatically.",
+      "description": "Turn on the Meta forms whose new leads should be called automatically.",
+      "empty": "No connected Meta forms yet.",
+      "openMeta": "Open Meta settings",
+      "autoCall": "Auto-call",
+      "toggle": "Auto-call new leads from {{form}}",
+      "delay": "Call new leads after",
+      "delayHint": "When a new lead arrives from a form switched on below, Exotel calls after this delay.",
+      "minutes_one": "{{count}} minute",
+      "minutes_other": "{{count}} minutes"
+    },
+    "calls": {
+      "title": "Recent auto-calls",
+      "description": "Scheduled, placed and skipped calls (updates every 30 seconds).",
+      "empty": "No auto-calls yet.",
+      "reasons": {
+        "new_lead": "New lead",
+        "followup": "Scheduled call"
+      },
+      "status": {
+        "pending": "Scheduled",
+        "started": "Calling",
+        "completed": "Completed",
+        "no_answer": "No answer",
+        "busy": "Busy",
+        "failed": "Failed",
+        "skipped": "Skipped",
+        "cancelled": "Cancelled"
+      }
+    },
+    "hours": {
+      "title": "Calling hours",
+      "description": "Exotel calls only on these days and times ({{tz}} time).",
+      "enabled": "Only call during calling hours",
+      "onHint": "New-lead calls outside these hours wait for the next opening; scheduled calls can only be set inside them.",
+      "offHint": "Off: Exotel may call at any time.",
+      "days": "Days",
+      "start": "From",
+      "end": "Until",
+      "appliesTo": "Applies to every form and every scheduled call.",
+      "save": "Save calling hours"
+    }
+  },
+  "whatsappManage": {
+    "title": "WhatsApp numbers",
+    "description": "Numbers of the WhatsApp Business Accounts you allowed. Choose the one your team uses.",
+    "refresh": "Refresh",
+    "noNumbers": "This account has no phone numbers yet.",
+    "quality": "Quality: {{rating}}",
+    "ratings": {
+      "GREEN": "High",
+      "YELLOW": "Medium",
+      "RED": "Low"
+    },
+    "inUse": "In use",
+    "use": "Use this number",
+    "expires": "The Facebook login lasts until {{when}}. Log in again before then to keep it working.",
+    "reconnectHint": "Use Log in again to add more WhatsApp Business Accounts.",
+    "register": "Register",
+    "registered": "Registered",
+    "coexistence": "This number is also used in the WhatsApp Business app on your phone (coexistence).",
+    "pin": "Two-step verification PIN set for registered numbers:",
+    "addNumber": "Add or connect another number"
+  },
+  "sheets": {
+    "connected": {
+      "title": "Leads from sheets",
+      "description": "Rows of these sheets become enquiries. New rows sync every 5 minutes.",
+      "add": "Import a sheet",
+      "empty": "No sheet imported. Use Import a sheet to turn a sheet's rows into enquiries.",
+      "stats_one": "{{count}} row imported",
+      "stats_other": "{{count}} rows imported",
+      "synced": "synced {{when}}",
+      "paused": "Paused",
+      "autoSync": "Sync {{sheet}} automatically",
+      "syncNow": "Sync now",
+      "remove": "Disconnect {{sheet}}",
+      "confirmRemove": "Stop syncing this sheet? Enquiries already imported stay.",
+      "imported_one": "{{count}} new enquiry imported.",
+      "imported_other": "{{count}} new enquiries imported."
+    },
+    "fields": {
+      "name": "Name column",
+      "phone": "Phone column",
+      "email": "Email column"
+    },
+    "pick": {
+      "title": "Pick a spreadsheet",
+      "description": "Your Google Sheets, newest first.",
+      "tabHint": "Choose the tab with your leads.",
+      "back": "Back",
+      "search": "Search spreadsheets",
+      "none": "No spreadsheets found.",
+      "tabs": "Tabs",
+      "noHeader": "This tab is empty. The first row must hold the column names.",
+      "mapHint": "Check which columns hold the name, phone and email. A phone or an email is needed.",
+      "notInSheet": "Not in this sheet",
+      "otherColumns": "All other columns are saved with each enquiry (see its timeline).",
+      "importExisting": "Import the rows already in the sheet",
+      "connect": "Connect sheet"
+    },
+    "export": {
+      "title": "Send leads to a sheet",
+      "description": "Write a form's leads (or all enquiries) to a Google Sheet. New leads, status, owner and other changes update the sheet about every minute.",
+      "add": "Connect a form to a sheet",
+      "empty": "No form connected to a sheet yet.",
+      "which": "Leads to send",
+      "whichHint": "A Meta form (for example your real estate form), or every enquiry.",
+      "allEnquiries": "All enquiries",
+      "where": "Where",
+      "target": {
+        "new": "Create a new spreadsheet",
+        "existing": "Add a new tab to one of my spreadsheets"
+      },
+      "newTitle": "Spreadsheet name",
+      "newTabHint": "A new tab is added; existing tabs are never changed.",
+      "columns": "Columns: enquiry ID, created, name, phone, email, status, owner, source, campaign, ad set, ad, form and your custom fields.",
+      "connect": "Connect",
+      "sending": "Sending: {{what}}",
+      "stats_one": "{{count}} lead in the sheet",
+      "stats_other": "{{count}} leads in the sheet",
+      "willConnect": "{{form}} is switched off in Meta forms. It will be switched on so its new leads reach the LMS and the sheet.",
+      "noLeadsYet": "This form has not received any leads yet. The sheet fills as soon as it does.",
+      "leads_one": "{{count}} lead",
+      "leads_other": "{{count}} leads",
+      "off": "switched off",
+      "changeForm": "Form:"
+    }
+  },
+  "whatsappConnect": {
+    "title": "Connect WhatsApp",
+    "description": "Choose how you want to connect. Facebook opens in a popup and guides you step by step.",
+    "new": {
+      "title": "Add a phone number",
+      "hint": "Use a new number, or one already on the WhatsApp Business Platform. Verify it by SMS or a call in the popup.",
+      "button": "Connect a number"
+    },
+    "coexistence": {
+      "title": "Use your WhatsApp Business app number",
+      "hint": "Keep chatting in the WhatsApp Business app on your phone and use the same number in the LMS.",
+      "button": "Connect the app number"
+    },
+    "notSetUp": "The guided WhatsApp signup is not set up on the server yet (META_WHATSAPP_CONFIG_ID). Until then you can connect an existing WhatsApp Business Account with a Facebook login.",
+    "simple": "Connect with Facebook"
+  },
+  "weekdays": {
+    "mon": "Mon",
+    "tue": "Tue",
+    "wed": "Wed",
+    "thu": "Thu",
+    "fri": "Fri",
+    "sat": "Sat",
+    "sun": "Sun"
+  },
+  "pwa": {
+    "install": "Install app",
+    "iosHint": "To install: tap Share, then Add to Home Screen."
+  },
+  "capi": {
+    "title": "Lead quality feedback (Conversions API)",
+    "description": "Each time a Meta lead's status changes, the LMS tells Meta. Meta then shows your ads to people more likely to become real customers.",
+    "enable": "Send lead feedback to Meta",
+    "dataset": "Dataset ID",
+    "datasetHint": "Meta Events Manager > Data sources > your CRM dataset > Settings.",
+    "token": "Conversions API access token",
+    "tokenHint": "Events Manager > the dataset > Settings > Generate access token.",
+    "save": "Save",
+    "stagesTitle": "Your statuses are sent as lead stages",
+    "stagesHint": "In Events Manager, map them to Meta's stages (for example New = Lead, Qualified = Qualified lead, Closed = Converted).",
+    "testCode": "Test event code (optional)",
+    "testHint": "From Events Manager > Test events, to check the setup.",
+    "sendTest": "Send test event",
+    "recent": "Recent events",
+    "none": "Nothing sent yet. Events are sent when a Meta lead arrives and when its status changes.",
+    "lead": "Lead {{id}}",
+    "testBadge": "Test"
+  }
+}

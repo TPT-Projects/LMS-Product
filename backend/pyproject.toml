@@ -1,0 +1,30 @@
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["**/migrations/*"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "DJ"]
+# DJ001: a few CharFields are nullable on purpose. Unique partial indexes
+# (contact phone/email, Meta leadgen_id) need NULL, not "", to mean "no value".
+ignore = ["DJ001"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings.test"
+python_files = ["test_*.py"]
+testpaths = ["tests", "apps", "common"]
+addopts = "-ra --reuse-db"
+filterwarnings = [
+    # daphne still sets the Windows event-loop policy that Python 3.14 deprecates
+    "ignore::DeprecationWarning:daphne",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Usage examples in command docstrings contain long file names.
+"apps/*/management/commands/*.py" = ["E501"]
+# pytest fixtures shared between test modules are imported, then used as parameters.
+"tests/*.py" = ["F811"]
