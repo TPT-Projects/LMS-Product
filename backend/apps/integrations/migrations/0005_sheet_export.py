@@ -7,24 +7,37 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('integrations', '0004_enable_rls_more'),
-        ('meta_integration', '0009_metaform_auto_call'),
+        ("integrations", "0004_enable_rls_more"),
+        ("meta_integration", "0009_metaform_auto_call"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='sheetlink',
-            name='content_hash',
+            model_name="sheetlink",
+            name="content_hash",
             field=models.CharField(blank=True, max_length=64),
         ),
         migrations.AddField(
-            model_name='sheetlink',
-            name='direction',
-            field=models.CharField(choices=[('import', 'Rows become enquiries'), ('export', 'Enquiries are written to the sheet')], default='import', max_length=8),
+            model_name="sheetlink",
+            name="direction",
+            field=models.CharField(
+                choices=[
+                    ("import", "Rows become enquiries"),
+                    ("export", "Enquiries are written to the sheet"),
+                ],
+                default="import",
+                max_length=8,
+            ),
         ),
         migrations.AddField(
-            model_name='sheetlink',
-            name='form',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='+', to='meta_integration.metaform'),
+            model_name="sheetlink",
+            name="form",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name="+",
+                to="meta_integration.metaform",
+            ),
         ),
     ]

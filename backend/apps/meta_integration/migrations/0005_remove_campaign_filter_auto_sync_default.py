@@ -6,17 +6,17 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('meta_integration', '0004_auto_connect_forms'),
+        ("meta_integration", "0004_auto_connect_forms"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='metaconnection',
-            name='selected_campaigns',
+            model_name="metaconnection",
+            name="selected_campaigns",
         ),
         migrations.AlterField(
-            model_name='metaconnection',
-            name='auto_connect_forms',
+            model_name="metaconnection",
+            name="auto_connect_forms",
             field=models.BooleanField(default=True),
         ),
     ]

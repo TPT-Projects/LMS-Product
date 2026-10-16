@@ -6,18 +6,27 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('meta_integration', '0002_enable_rls'),
+        ("meta_integration", "0002_enable_rls"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='metaconnection',
-            name='selected_campaigns',
+            model_name="metaconnection",
+            name="selected_campaigns",
             field=models.JSONField(blank=True, default=list),
         ),
         migrations.AlterField(
-            model_name='synclog',
-            name='status',
-            field=models.CharField(choices=[('synced', 'Synced'), ('duplicate', 'Already synced'), ('form_not_connected', 'Form not connected'), ('campaign_not_selected', 'Campaign not selected'), ('failed', 'Failed')], max_length=24),
+            model_name="synclog",
+            name="status",
+            field=models.CharField(
+                choices=[
+                    ("synced", "Synced"),
+                    ("duplicate", "Already synced"),
+                    ("form_not_connected", "Form not connected"),
+                    ("campaign_not_selected", "Campaign not selected"),
+                    ("failed", "Failed"),
+                ],
+                max_length=24,
+            ),
         ),
     ]

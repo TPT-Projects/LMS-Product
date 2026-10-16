@@ -6,17 +6,17 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('meta_integration', '0007_poll_new_leads'),
+        ("meta_integration", "0007_poll_new_leads"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='metaform',
-            options={'ordering': ['name', 'id']},
+            name="metaform",
+            options={"ordering": ["name", "id"]},
         ),
         migrations.AddField(
-            model_name='metaform',
-            name='page_id',
+            model_name="metaform",
+            name="page_id",
             field=models.CharField(blank=True, max_length=64),
         ),
     ]

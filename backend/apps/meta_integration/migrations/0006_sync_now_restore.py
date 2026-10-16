@@ -6,18 +6,37 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('meta_integration', '0005_remove_campaign_filter_auto_sync_default'),
+        ("meta_integration", "0005_remove_campaign_filter_auto_sync_default"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='synclog',
-            name='source',
-            field=models.CharField(choices=[('webhook', 'Webhook'), ('backfill', 'Backfill'), ('retry', 'Retry'), ('test', 'Test'), ('manual', 'Sync now')], max_length=10),
+            model_name="synclog",
+            name="source",
+            field=models.CharField(
+                choices=[
+                    ("webhook", "Webhook"),
+                    ("backfill", "Backfill"),
+                    ("retry", "Retry"),
+                    ("test", "Test"),
+                    ("manual", "Sync now"),
+                ],
+                max_length=10,
+            ),
         ),
         migrations.AlterField(
-            model_name='synclog',
-            name='status',
-            field=models.CharField(choices=[('synced', 'Synced'), ('duplicate', 'Already synced'), ('form_not_connected', 'Form not connected'), ('campaign_not_selected', 'Campaign not selected'), ('restored', 'Restored'), ('failed', 'Failed')], max_length=24),
+            model_name="synclog",
+            name="status",
+            field=models.CharField(
+                choices=[
+                    ("synced", "Synced"),
+                    ("duplicate", "Already synced"),
+                    ("form_not_connected", "Form not connected"),
+                    ("campaign_not_selected", "Campaign not selected"),
+                    ("restored", "Restored"),
+                    ("failed", "Failed"),
+                ],
+                max_length=24,
+            ),
         ),
     ]

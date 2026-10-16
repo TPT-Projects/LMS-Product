@@ -11,29 +11,61 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('tenants', '0002_enable_rls'),
+        ("tenants", "0002_enable_rls"),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Integration',
+            name="Integration",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('app', models.CharField(max_length=32)),
-                ('status', models.CharField(choices=[('connected', 'Connected'), ('error', 'Needs attention')], default='connected', max_length=16)),
-                ('config', models.JSONField(blank=True, default=dict)),
-                ('_secrets', models.TextField(blank=True, db_column='secrets_enc')),
-                ('account_label', models.CharField(blank=True, max_length=255)),
-                ('connected_at', models.DateTimeField(default=django.utils.timezone.now)),
-                ('last_checked_at', models.DateTimeField(blank=True, null=True)),
-                ('last_error', models.TextField(blank=True)),
-                ('connected_by', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='+', to=settings.AUTH_USER_MODEL)),
-                ('tenant', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='+', to='tenants.tenant')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True, primary_key=True, serialize=False, verbose_name="ID"
+                    ),
+                ),
+                ("app", models.CharField(max_length=32)),
+                (
+                    "status",
+                    models.CharField(
+                        choices=[("connected", "Connected"), ("error", "Needs attention")],
+                        default="connected",
+                        max_length=16,
+                    ),
+                ),
+                ("config", models.JSONField(blank=True, default=dict)),
+                ("_secrets", models.TextField(blank=True, db_column="secrets_enc")),
+                ("account_label", models.CharField(blank=True, max_length=255)),
+                ("connected_at", models.DateTimeField(default=django.utils.timezone.now)),
+                ("last_checked_at", models.DateTimeField(blank=True, null=True)),
+                ("last_error", models.TextField(blank=True)),
+                (
+                    "connected_by",
+                    models.ForeignKey(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.SET_NULL,
+                        related_name="+",
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
+                (
+                    "tenant",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="+",
+                        to="tenants.tenant",
+                    ),
+                ),
             ],
             options={
-                'db_table': 'integrations',
-                'constraints': [models.UniqueConstraint(fields=('tenant', 'app'), name='uniq_integration_per_app')],
+                "db_table": "integrations",
+                "constraints": [
+                    models.UniqueConstraint(
+                        fields=("tenant", "app"), name="uniq_integration_per_app"
+                    )
+                ],
             },
         ),
     ]

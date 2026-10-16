@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('meta_integration', '0003_campaign_filter'),
+        ("meta_integration", "0003_campaign_filter"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='metaconnection',
-            name='auto_connect_forms',
+            model_name="metaconnection",
+            name="auto_connect_forms",
             field=models.BooleanField(default=False),
         ),
     ]

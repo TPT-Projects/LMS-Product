@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('accounts', '0004_enable_rls_table_preferences'),
+        ("accounts", "0004_enable_rls_table_preferences"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='user',
-            name='alternate_phone',
+            model_name="user",
+            name="alternate_phone",
             field=models.CharField(blank=True, max_length=20),
         ),
         migrations.AddField(
-            model_name='user',
-            name='phone',
+            model_name="user",
+            name="phone",
             field=models.CharField(blank=True, max_length=20),
         ),
     ]

@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('meta_integration', '0008_form_page'),
+        ("meta_integration", "0008_form_page"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='metaform',
-            name='auto_call',
+            model_name="metaform",
+            name="auto_call",
             field=models.BooleanField(default=False),
         ),
     ]

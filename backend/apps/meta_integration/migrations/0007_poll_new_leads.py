@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('meta_integration', '0006_sync_now_restore'),
+        ("meta_integration", "0006_sync_now_restore"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='metaconnection',
-            name='forms_refreshed_at',
+            model_name="metaconnection",
+            name="forms_refreshed_at",
             field=models.DateTimeField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='metaconnection',
-            name='last_polled_at',
+            model_name="metaconnection",
+            name="last_polled_at",
             field=models.DateTimeField(blank=True, null=True),
         ),
     ]

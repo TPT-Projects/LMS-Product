@@ -6,13 +6,22 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('enquiries', '0004_note_audio_note_audio_content_type_and_more'),
+        ("enquiries", "0004_note_audio_note_audio_content_type_and_more"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='enquiry',
-            name='source',
-            field=models.CharField(choices=[('manual', 'Manual'), ('meta', 'Meta'), ('import', 'Import'), ('sheets', 'Google Sheets')], default='manual', max_length=10),
+            model_name="enquiry",
+            name="source",
+            field=models.CharField(
+                choices=[
+                    ("manual", "Manual"),
+                    ("meta", "Meta"),
+                    ("import", "Import"),
+                    ("sheets", "Google Sheets"),
+                ],
+                default="manual",
+                max_length=10,
+            ),
         ),
     ]
